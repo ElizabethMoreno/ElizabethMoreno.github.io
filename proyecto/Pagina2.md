@@ -1,3 +1,9 @@
+---
+layout: page
+title: Elizabeth Moreno Begines
+permalink: /Pagina1
+---
+
 # Elizabeth Moreno Begines
 Técnico Superior Administración de Sistemas Informáticos en Red (2017)
 
