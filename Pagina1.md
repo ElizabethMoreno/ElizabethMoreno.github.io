@@ -1,7 +1,7 @@
 ---
 layout: index
 title: Curriculum Vitae
-permalink: /Pagina1
+tagline: ElizabethMoreno.github.io
 ---
 
 # Elizabeth Moreno Begines

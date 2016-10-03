@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: index
 title: Elizabeth Moreno Begines
-permalink: /Pagina1
+permalink: /Pagina2
 ---
 
 # Elizabeth Moreno Begines
