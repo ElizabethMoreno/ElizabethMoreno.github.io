@@ -4,12 +4,26 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# Elizabeth Moreno Begines
+Técnico Superior Administración de Sistemas Informáticos en Red (2017)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+##### Formación Técnica
+- Configuración y administración de redes
+- Administración y gestión de Base de Datos en Oracle, Postgres y Mysql
+- Configuración y administración de servidores: Linux y Windows
+- Lenguaje de Programación en Python
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+##### Experiencia Laboral
+- Monitora de clases extraescolares
+- Monitora de Karate
+
+##### Idiomas
+Inglés – Nivel Medio
+
+##### Cursos
+- Curso Ofimática (paquete Office)
+- Curso de Monitor de Ocio y Tiempo Libre
+- Curso Lenguaje de Signos
+
+##### Información adicional
+Carnet de Conducir B y BTP y disponibilidad para trabajar fuera de tu provincia.

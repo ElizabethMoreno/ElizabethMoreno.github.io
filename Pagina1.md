@@ -5,4 +5,4 @@ tagline: elizabethmoreno.github.io
 ---
 
 # Elizabeth Moreno Begines
-[Curriculum Vitae](/Pagina2.md)
+[Curriculum Vitae](/about.md)
