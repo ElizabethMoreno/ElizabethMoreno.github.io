@@ -5,37 +5,102 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/skeleton.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/layout.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
-    <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
+<title>{{page.title}}</title>
+<meta charset="UTF-8">
+<!--[if IE]><![endif]-->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="{{site.path}}/stylesheets/blog/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="{{site.path}}/stylesheets/josedom24.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+<script src="js/scripts.js"></script>
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<div class="container">
-
-        {{ content }}
+<div class="container darkbg clearfix">
+	<div id="headercont" class="clearfix">
+		<div id="headerlogo">
+			<h1><a title="" href="">{{page.title}}</a></h1>
+			<h4><a href="">{{page.tagline}}</a></h4>
+		</div>
+		
+	</div>
 </div>
+<div class="container lightbluebg clearfix">
+    <div id="menucont" class="clearfix">
+        <div class="menu">
+            <ul>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
-</script>	
+            	{% assign pmenu = {{site.data.menu|first}} %}
+             {% for m in site.data.menu %}
+
+                {% if pmenu.nombre == {{m.nombre}} %}
+                   {% for me in m.items %}
+
+                          <li><a title="" href="{{me.url}}">{{me.name}}</a></li>
+                {% endfor %}
+                {% endif %}
+
+              {% endfor %}
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container clearfix">
+	<div id="maincont" class="clearfix">
+		<div id="mainleft">
+ 	{{content}}
+        </div>
+		<div id="mainright">
+             {% for m in site.data.menu %}
+
+                {% if m.nombre != {{pmenu.nombre}} %}
+
+            <h3>{{m.nombre}}</h3>
+            <ul class="otherlinks clearfix">
+	         {% for me in m.items %}
+             	<li><a title="" href="{{me.url}}" rel="external">{{me.name}}</a></li>
+		{% endfor %}	
+		{% endif %}
+	
+            </ul>
+	    {% endfor %}
+
+
+             <div class="sidebottom">
+                        <p></p>
+                    </div>
+       <!--     <div class="sidecont clearfix">
+                <div class="sidesection clearfix">
+                    <h4><a title="" href="#">Responsive Design</a></h4>
+                    <div class="sidetop">
+                        <a class="hoverlink" title="" href="#"><img alt="" src="images/side-1.jpg" /><div class="overlay link"></div></a>
+                    </div>
+                    <div class="sidebottom">
+                        <p>Curabitur tristique tempus purus ...</p>
+                    </div>
+                </div>
+                <div class="sidesection clearfix">
+                    <h4><a title="" href="#">HTML5 / CSS</a></h4>
+                    <div class="sidetop">
+                        <a class="hoverlink" title="" href="#"><img alt="" src="images/side-1.jpg" /><div class="overlay link"></div></a>
+                    </div>
+                    <div class="sidebottom">
+                        <p>Curabitur tristique tempus purus ...</p>
+                    </div>
+                </div>
+			</div>
+        </div>-->
+	</div>
+</div>
+<div class="container clearfix">
+    <div id="footercont" class="clearfix">
+        <p>Your Website Name &copy; 2012 - Free Website Template by <a title="derby website design" href="http://www.derby-webdesign.co.uk/" rel="external">Derby Web Design</a></p>
+    </div>
+</div>
 </body>
 </html>
