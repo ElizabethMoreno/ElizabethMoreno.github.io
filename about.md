@@ -4,7 +4,7 @@ title: Elizabeth Moreno Begines
 permalink: /about/
 ---
 
-![foto](https://github.com/ElizabethMoreno/ElizabethMoreno.github.io/blob/master/carnet%20elizabeth.jpeg?raw=true)
+![Sin titulo](https://github.com/ElizabethMoreno/ElizabethMoreno.github.io/blob/master/carnet%20elizabeth.jpeg?raw=true)
 
 Técnico Superior Administración de Sistemas Informáticos en Red (2017)
 
