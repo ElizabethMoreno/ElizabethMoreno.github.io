@@ -1,10 +1,10 @@
 ---
 layout: index
-title: About
+title: Elizabeth Moreno Begines
 permalink: /about/
 ---
 
-# Elizabeth Moreno Begines
+
 Técnico Superior Administración de Sistemas Informáticos en Red (2017)
 
 ##### Formación Técnica

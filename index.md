@@ -1,7 +1,10 @@
 ---
 layout: index
+<<<<<<< HEAD
+title: Elizabeth Moreno Begines
+=======
 title: Curriculum Vitae
+>>>>>>> 7ff79d22399a670de07811467588cd646f21734a
 ---
-
-# Elizabeth Moreno Begines
+ 
 [Curriculum Vitae](/about.md)
