@@ -6,7 +6,7 @@ permalink: /about/
 
 ![Sin titulo](https://github.com/ElizabethMoreno/ElizabethMoreno.github.io/blob/master/carnet%20elizabeth.jpeg?raw=true)
 
-####Técnico Superior Administración de Sistemas Informáticos en Red (2017)
+Técnico Superior Administración de Sistemas Informáticos en Red (2017)
 
 ##### Formación Técnica
 - Configuración y administración de redes
